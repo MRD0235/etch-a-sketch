@@ -1,6 +1,10 @@
+body {
+    display: flex;
+    justify-content: center;
+}
+
 #container, #rows {
     display: flex;
-    gap: 5px; 
 }
 
 #rows {
@@ -13,4 +17,8 @@
     border-color: black;
     width: 25px;
     height: 25px;
+}
+
+#colored {
+    background-color: blue;
 }

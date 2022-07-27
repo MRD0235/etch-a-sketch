@@ -12,6 +12,9 @@ for (let j = 0; j < sideSize; j++) {
     for (let i = 0; i < sideSize; i++) {
         let d = document.createElement('div')
         d.setAttribute("class", "boxes")
+        d.addEventListener("mouseover", () => {
+            d.setAttribute("id", "colored")
+        })
         row.appendChild(d)
     }
     container.appendChild(row)
