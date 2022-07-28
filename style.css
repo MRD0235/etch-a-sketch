@@ -1,24 +1,35 @@
 body {
     display: flex;
-    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 #container, #rows {
     display: flex;
+    width: 600px;
+    height: 600px;  
 }
 
-#rows {
+#container {
     flex-direction: column;
+    border: 5px;
+    border-color: black;
+    border-style: solid;
 }
 
 .boxes {
-    border: 2px;
+    border: 0px;
     border-style: solid;
     border-color: black;
-    width: 25px;
-    height: 25px;
+    flex: auto;
 }
 
 #colored {
     background-color: blue;
+}
+
+#buttons {
+    display: flex;
+    gap: 25px;
+    margin-bottom: 25px;
 }
