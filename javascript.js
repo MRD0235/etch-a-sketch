@@ -27,6 +27,10 @@ function gridSetup(sideSize) {
 
 function changeSize() {
     sideSize = prompt("Set a size for the grid:", 16)
+    while (sideSize > 100) {
+        alert("Grid size is too large. Please select a number less than 101.")
+        sideSize = prompt("Set a size for the grid:", 16)
+    }
     clearGrid()
     removeDiv()
     gridSetup(sideSize)
